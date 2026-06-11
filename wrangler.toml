@@ -1,0 +1,8 @@
+name = "cf-pages-react-d1-demo"
+compatibility_date = "2024-11-18"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "demo-db"
+database_id = "4bf099b7-b5b0-49b4-9451-7f51f7d0384f"

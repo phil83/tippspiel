@@ -1,7 +1,20 @@
 {
+  "name": "cf-pages-react-d1-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "deploy": "wrangler deploy",
-    "preview": "wrangler dev"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pages:dev": "wrangler pages dev dist --d1 DB=demo-db --compatibility-date=2024-11-18",
+    "deploy": "npm run build && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "wrangler": "latest"
